@@ -1,27 +1,9 @@
 <template>
-  <h1>Hello world!</h1>
+  <h1>To-Do application</h1>
+  <add-to-do @add-todo="addTodo" />
   <hr>
-  <ToDoList />
+  <router-view />
 </template>
-
-<script>
-import ToDoList from '@/components/ToDoList';
-export default {
-  name: 'App',
-  data() {
-    return {
-      todos: [
-        {id: 1, title: 'Купить хлеб', completed: false},
-        {id: 2, title: 'Купить масло', completed: false},
-        {id: 3, title: 'Купить пиво', completed: false},
-      ]
-    };
-  },
-  components: {
-    ToDoList
-  }
-}
-</script>
 
 <style>
 #app {
@@ -31,5 +13,16 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+a {
+  color: #0065ff;
+}
+
+hr {
+  padding: 0;
+  height: 0;
+  border: none;
+  border-top: 1px solid #d3d3d3;
 }
 </style>
