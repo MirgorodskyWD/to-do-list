@@ -1,3 +1,3 @@
-# ToDoList based on Vue 2 JS
+# ToDoList based on Vue JS
 
 This is hello world application for learning purposes.
